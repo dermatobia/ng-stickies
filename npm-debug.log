@@ -1,0 +1,188 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'firebase-tools' ]
+2 info using npm@2.0.2
+3 info using node@v0.10.32
+4 verbose node symlink /usr/local/bin/node
+5 verbose cache add [ 'firebase-tools', null ]
+6 verbose cache add spec="firebase-tools" args=["firebase-tools",null]
+7 verbose parsed spec { raw: 'firebase-tools',
+7 verbose parsed spec   scope: null,
+7 verbose parsed spec   name: 'firebase-tools',
+7 verbose parsed spec   rawSpec: '',
+7 verbose parsed spec   spec: '*',
+7 verbose parsed spec   type: 'range' }
+8 verbose parsed spec { raw: 'firebase-tools',
+8 verbose parsed spec   scope: null,
+8 verbose parsed spec   name: 'firebase-tools',
+8 verbose parsed spec   rawSpec: '',
+8 verbose parsed spec   spec: '*',
+8 verbose parsed spec   type: 'range' }
+9 verbose addNamed [ 'firebase-tools', '*' ]
+10 verbose addNamed [ null, '*' ]
+11 silly lockFile cedaa1af-firebase-tools firebase-tools@*
+12 verbose lock firebase-tools@* /Users/sara/.npm/cedaa1af-firebase-tools.lock
+13 silly addNameRange { name: 'firebase-tools', range: '*', hasData: false }
+14 verbose mapToRegistry name firebase-tools
+15 verbose mapToRegistry uri https://registry.npmjs.org/firebase-tools
+16 verbose request on initialization, where is /firebase-tools
+17 verbose request after pass 1, where is /firebase-tools
+18 verbose request url raw /firebase-tools
+19 verbose request resolving registry [ 'https://registry.npmjs.org/', './firebase-tools' ]
+20 verbose request after pass 2, where is https://registry.npmjs.org/firebase-tools
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 00:05:35
+23 verbose request id 732a9ef2b622faf8
+24 http request GET https://registry.npmjs.org/firebase-tools
+25 http 200 https://registry.npmjs.org/firebase-tools
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Sun, 05 Oct 2014 04:05:36 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"3CI2BGBCIG3H3J48W6FXOYWK4"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '35356',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-atl6227-ATL',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1412481936.033960,VS0,VE383',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'firebase-tools', range: '*', hasData: true }
+28 silly addNameRange versions [ 'firebase-tools',
+28 silly addNameRange   [ '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '0.0.6',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.1.4',
+28 silly addNameRange     '0.1.5',
+28 silly addNameRange     '0.1.6',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.3',
+28 silly addNameRange     '1.0.4',
+28 silly addNameRange     '1.0.5',
+28 silly addNameRange     '1.0.6',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.1.2' ] ]
+29 verbose addNamed [ 'firebase-tools', '1.1.2' ]
+30 verbose addNamed [ '1.1.2', '1.1.2' ]
+31 silly lockFile 7fc99558-firebase-tools-1-1-2 firebase-tools@1.1.2
+32 verbose lock firebase-tools@1.1.2 /Users/sara/.npm/7fc99558-firebase-tools-1-1-2.lock
+33 silly lockFile f4ccda34-e-tools-firebase-tools-1-1-2-tgz https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.2.tgz
+34 verbose lock https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.2.tgz /Users/sara/.npm/f4ccda34-e-tools-firebase-tools-1-1-2-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.2.tgz',
+35 verbose addRemoteTarball   'c7fb6d296995735a009ee7aa2e955a7c889f0344' ]
+36 info retry fetch attempt 1 at 00:05:36
+37 info attempt registry request try #1 at 00:05:36
+38 http fetch GET https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.2.tgz
+39 http fetch 200 https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.2.tgz
+40 silly fetchAndShaCheck shasum c7fb6d296995735a009ee7aa2e955a7c889f0344
+41 silly lockFile f4ccda34-e-tools-firebase-tools-1-1-2-tgz https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.2.tgz
+42 silly lockFile f4ccda34-e-tools-firebase-tools-1-1-2-tgz https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.2.tgz
+43 silly lockFile 7fc99558-firebase-tools-1-1-2 firebase-tools@1.1.2
+44 silly lockFile 7fc99558-firebase-tools-1-1-2 firebase-tools@1.1.2
+45 silly lockFile cedaa1af-firebase-tools firebase-tools@*
+46 silly lockFile cedaa1af-firebase-tools firebase-tools@*
+47 silly resolved [ { name: 'firebase-tools',
+47 silly resolved     preferGlobal: true,
+47 silly resolved     version: '1.1.2',
+47 silly resolved     description: 'The Firebase Command Line Tools',
+47 silly resolved     keywords:
+47 silly resolved      [ 'firebase',
+47 silly resolved        'hosting',
+47 silly resolved        'ssl',
+47 silly resolved        'cdn',
+47 silly resolved        'cli',
+47 silly resolved        'synchronization',
+47 silly resolved        'real-time',
+47 silly resolved        'websockets',
+47 silly resolved        'cloud' ],
+47 silly resolved     author: { name: 'Firebase', email: 'support@firebase.com' },
+47 silly resolved     contributors: [ [Object], [Object], [Object] ],
+47 silly resolved     repository:
+47 silly resolved      { type: 'git',
+47 silly resolved        url: 'https://github.com/firebase/firebase-tools.git' },
+47 silly resolved     homepage: 'https://github.com/firebase/firebase-tools',
+47 silly resolved     dependencies:
+47 silly resolved      { optimist: '0.6.x',
+47 silly resolved        prompt: '0.2.x',
+47 silly resolved        tar: '0.1.x',
+47 silly resolved        open: '0.0.x',
+47 silly resolved        request: '2.34.x',
+47 silly resolved        'fstream-ignore': '0.0.x',
+47 silly resolved        temp: '0.6.x',
+47 silly resolved        firebase: '~1.0.11',
+47 silly resolved        progress: '~1.1.5',
+47 silly resolved        when: '3.1.0',
+47 silly resolved        chalk: '~0.4.0' },
+47 silly resolved     bin: { firebase: './bin/firebase' },
+47 silly resolved     engines: { node: '>=0.10.0' },
+47 silly resolved     engineStrict: true,
+47 silly resolved     bugs: { url: 'https://github.com/firebase/firebase-tools/issues' },
+47 silly resolved     _id: 'firebase-tools@1.1.2',
+47 silly resolved     _shasum: 'c7fb6d296995735a009ee7aa2e955a7c889f0344',
+47 silly resolved     _from: 'firebase-tools@*',
+47 silly resolved     _npmVersion: '1.4.9',
+47 silly resolved     _npmUser: { name: 'firebase', email: 'operations@firebase.com' },
+47 silly resolved     maintainers: [ [Object] ],
+47 silly resolved     dist:
+47 silly resolved      { shasum: 'c7fb6d296995735a009ee7aa2e955a7c889f0344',
+47 silly resolved        tarball: 'http://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.2.tgz' },
+47 silly resolved     directories: {},
+47 silly resolved     _resolved: 'https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.2.tgz' } ]
+48 info install firebase-tools@1.1.2 into /usr/local/lib
+49 info installOne firebase-tools@1.1.2
+50 verbose lib/node_modules/firebase-tools unbuild
+51 verbose gentlyRm vacuuming /usr/local/lib/node_modules/firebase-tools
+52 verbose tar unpack /Users/sara/.npm/firebase-tools/1.1.2/package.tgz
+53 silly lockFile 7e3d5d18--lib-node-modules-firebase-tools tar:///usr/local/lib/node_modules/firebase-tools
+54 verbose lock tar:///usr/local/lib/node_modules/firebase-tools /Users/sara/.npm/7e3d5d18--lib-node-modules-firebase-tools.lock
+55 silly lockFile 488158cc-firebase-tools-1-1-2-package-tgz tar:///Users/sara/.npm/firebase-tools/1.1.2/package.tgz
+56 verbose lock tar:///Users/sara/.npm/firebase-tools/1.1.2/package.tgz /Users/sara/.npm/488158cc-firebase-tools-1-1-2-package-tgz.lock
+57 verbose gentlyRm vacuuming /usr/local/lib/node_modules/firebase-tools
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 verbose fstream_path /usr/local/lib/node_modules/firebase-tools
+60 verbose fstream_type Directory
+61 verbose fstream_class DirWriter
+62 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/firebase-tools'
+63 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 verbose fstream_stack Object.oncomplete (fs.js:107:15)
+64 verbose cwd /Users/sara/code/angular/stickies
+65 error Darwin 13.4.0
+66 error argv "node" "/usr/local/bin/npm" "install" "-g" "firebase-tools"
+67 error node v0.10.32
+68 error npm  v2.0.2
+69 error path /usr/local/lib/node_modules/firebase-tools
+70 error code EACCES
+71 error errno 3
+72 error Error: EACCES, mkdir '/usr/local/lib/node_modules/firebase-tools'
+72 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/firebase-tools']
+72 error   errno: 3,
+72 error   code: 'EACCES',
+72 error   path: '/usr/local/lib/node_modules/firebase-tools',
+72 error   fstream_type: 'Directory',
+72 error   fstream_path: '/usr/local/lib/node_modules/firebase-tools',
+72 error   fstream_class: 'DirWriter',
+72 error   fstream_stack:
+72 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+72 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+72 error      'Object.oncomplete (fs.js:107:15)' ] }
+73 error Please try running this command again as root/Administrator.
+74 verbose exit [ 3, true ]

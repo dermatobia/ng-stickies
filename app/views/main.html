@@ -1,0 +1,74 @@
+
+<div class="board-list col-md-3">
+
+  <div id='info'>
+    <i ng-click='toggleInfoModal()' data-tooltip='More info' class="fa fa-info-circle"></i>
+  </div>   
+
+  <h3>board list</h3>
+
+  <ul ng-repeat="board in boardsArr" class="board-btn" ng-class='{active: isSelected(board)}' ng-click="selectBoard(board)" >
+    <li ng-dblclick="editBoard(board)">
+      <span ng-hide="board.editing">{{board.name}}</span>
+      <i class="fa fa-times" ng-show='isSelected(board)' ng-click="toggleDeleteModal()"></i>
+      <i class="fa fa-pencil" ng-show='isSelected(board) && !board.editing' ng-click="editBoard(board)"></i>
+      <i class="fa fa-check" ng-show='board.editing' ng-click="doneEdit(board)"></i>
+      <form ng-submit="doneEdit(board)" ng-show="board.editing">
+        <input  maxlength='30'
+                ng-model="boards[board.$id].name" 
+                ng-blur="doneEdit(board)" 
+                ng-focus="board == editedBoard">
+        </input>
+      </form>
+    </label>
+  </ul>
+  
+  <div class="add-board-btn" ng-click="createBoard()">
+    <i class="fa fa-plus">
+    </i>Add new board
+  </div>
+</div>
+
+<div id="board" class="col-md-9" ng-dblclick='addNote($event)' >
+
+  <div  ng-repeat="note in notesArr"
+        class="note"
+        ng-draggable="notes[note.$id]"
+        style="left: {{note.x}}px; top: {{note.y}}px" >
+
+    <div class="header">
+      <i class="fa fa-times" ng-click="removeNote(note)"></i>
+    </div>
+    
+    <div class="content" my-content='notes[note.$id]' ng-bind-html="note.content | unsafe">
+    </div>
+  </div>
+
+</div>
+
+
+<modal-dialog class='del-board' show='deleteModalShown' b='board' width='450px' height='210px'>
+  <div class='alert'><i class="fa fa-exclamation-triangle"></i></div>
+  <h4>All notes on this board will be deleted. Do you want to proceed?</h4>
+  
+  <div class='yes-or-no'>
+    <div class='answer-btn cancel-btn' ng-click='toggleDeleteModal()'>Cancel</div>
+    <div class='answer-btn ok-del-btn' ng-click="deleteBoard()">Yes</div>
+  </div>
+</modal-dialog>
+
+
+<modal-dialog show='modalInfoShown' width='450px' height='380px'>
+  <h3>Welcome to ng-stickies!</h3>
+  <br>
+  How to:
+    <li>Edit board name: double click on button</li>
+    <li>Create new note: double click on board</li>
+    <li>Edit note: double click on note</li>
+    <li>Move note: hold mouse down and drag</li>
+  <br>
+  <p>Built on <b>AngularJS</b>, powered and served by <b>Firebase</b></p>
+  Source: <a target="_blank" href="http://www.github.com/dermatobia/ng-stickies">Github</a>
+  <br><br><br>
+  <p class='right'>- dermatobia</p>
+</modal-dialog>

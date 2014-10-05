@@ -1,0 +1,9 @@
+{
+  "firebase": "ng-stickies",
+  "public": "app/",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
